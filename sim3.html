@@ -32,14 +32,15 @@
         const settings = {
             seed: 33515895609480,
             fps: 0,
-            atomsPerColor: 250,
+            atomsPerColor: 400,
             rules: {},
             rulesArray: [],
+           // colors: ['blue', 'red', 'white', 'grey', 'yellow'],
             colors: ['blue', 'red', 'white'],
             time_scale: 3.0,
-            cutOff: 1050, // interaction distance cut-off
-            viscosity: 0.5, // speed-dampening
-            pulseDuration: 20,
+            cutOff: 6700, // interaction distance cut-off
+            viscosity: 0.6, // speed-dampening
+            pulseDuration: 80,
             'Reset': () => {
                 randomAtoms(settings.atomsPerColor, true)
             },
